@@ -1,7 +1,4 @@
 // https://www.acmicpc.net/problem/11720
-#include <iostream>
-using namespace std;
-
 /*
 문제:
 N개의 숫자가 공백 없이 쓰여 있다. 이 숫자를 모두 합해 출력하는 프로그램을 작성하시오.
@@ -13,6 +10,9 @@ N개의 숫자가 공백 없이 쓰여 있다. 이 숫자를 모두 합해 출�
 출력:
 입력으로 주어진 숫자 N개의 합을 출력한다.
 */
+
+#include <iostream>
+using namespace std;
 
 int main()
 {

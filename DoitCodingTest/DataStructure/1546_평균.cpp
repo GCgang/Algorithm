@@ -1,8 +1,4 @@
 // https://www.acmicpc.net/problem/1546
-#include <iostream>
-#include <vector>
-using namespace std;
-
 /*
 문제:
 자기 점수 중 최대값을 고르고, 그 최댓값을 M이라 할 때
@@ -21,6 +17,10 @@ using namespace std;
 변환 점수의 평균을 구하는 식(점수가 A, B, C인 경우):
 (A / M * 100 + B / M * 100 + C / M * 100) / 3 = (A + B + C) * 100 / M / 3
 */
+
+#include <iostream>
+#include <vector>
+using namespace std;
 
 int main()
 {
