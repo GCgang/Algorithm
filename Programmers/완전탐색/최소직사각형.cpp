@@ -63,3 +63,10 @@ int solution(vector<vector<int>> sizes) {
 
     return answer;
 }
+
+// int main() {
+//     vector<vector<int>> sizes = {{60, 50}, {30, 70}, {60, 30}, {80, 40}};
+//     cout << solution(sizes) << endl; // 출력: 4000
+
+//     return 0;
+// }
