@@ -41,6 +41,7 @@ using namespace std;
 
 const int dy[4] = {-1, 0, 1, 0}; // 상 우 하 좌
 const int dx[4] = {0, 1, 0, -1}; // 상 우 하 좌
+//void BFS(vector<vector<int> >& map, vector<vector<int> >& visited, int N, int M);
 
 int main()
 {
@@ -87,6 +88,9 @@ int main()
 			q.push(make_pair(ny, nx));
 		}
 	}
+
+	// BFS(map, visited, N, M);
+
 	cout << visited[N][M] << "\n";
 	// 디버깅 용
 	// for (int i = 1; i <= N; ++i)
@@ -99,3 +103,25 @@ int main()
 	// }
 	return 0;
 }
+
+// void BFS(vector<vector<int> >& map, vector<vector<int> >& visited, int N, int M) {
+//     queue<pair<int, int> > q;
+//     visited[1][1] = 1;
+//     q.push(make_pair(1, 1));
+
+//     while (!q.empty()) {
+//         int y = q.front().first;
+//         int x = q.front().second;
+//         q.pop();
+
+//         for (int i = 0; i < 4; ++i) {
+//             int ny = y + dy[i];
+//             int nx = x + dx[i];
+
+//             if (ny < 1 || ny > N || nx < 1 || nx > M || map[ny][nx] == 0 || visited[ny][nx]) continue;
+
+//             visited[ny][nx] = visited[y][x] + 1;
+//             q.push(make_pair(ny, nx));
+//         }
+//     }
+// }
