@@ -37,6 +37,8 @@ c..c      -1 -1 0 1
 */
 
 #include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
 
 int main()
@@ -78,3 +80,50 @@ int main()
     }
     return 0;
 }
+
+/*
+다른 풀이
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    int H, W;
+
+    cin >> H >> W;
+    vector<vector<int> > JOI(H, vector<int>(W, -1));
+
+    for (int i = 0; i < H; ++i)
+    {
+        string row;
+        cin >> row;
+        int time = -1;
+
+        for(int j = 0; j < W; ++j)
+        {
+            if (row[j] == 'c')
+            {
+                time = 0;
+                JOI[i][j] = 0;
+            }
+            else if (time != -1)
+            {
+                time++;
+                JOI[i][j] = time;
+            }
+        }
+    }
+
+
+    for (int i = 0; i < H; ++i) {
+        for (int j = 0; j < W; ++j) {
+            cout << JOI[i][j] << " ";
+        }
+        cout << "\n";
+    }
+*/
