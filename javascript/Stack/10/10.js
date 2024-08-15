@@ -6,16 +6,18 @@ function isCorrectBracket(s) {
     } else {
       if (stack.length === 0) {
         return false;
-      } else if (bracket === ')') {
-        if (stack[stack.length - 1] !== '(') {
+      }
+      const top = stack[stack.length - 1];
+      if (bracket === ')') {
+        if (top !== '(') {
           return false;
         }
       } else if (bracket === ']') {
-        if (stack[stack.length - 1] !== '[') {
+        if (top !== '[') {
           return false;
         }
       } else if (bracket === '}') {
-        if (stack[stack.length - 1] !== '{') {
+        if (top !== '{') {
           return false;
         }
       }
