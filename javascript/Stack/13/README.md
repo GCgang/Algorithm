@@ -16,3 +16,26 @@
 
 - [MDN Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 - [MDN Array.prototype.pop()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+
+
+## 문제 (13-1.js)
+
+[크레인 인형 뽑기 게임](https://school.programmers.co.kr/learn/courses/30/lessons/64061)
+
+권장 시간 복잡도: `O(N^2 + M)`
+
+## 풀이
+
+1. 각 열에 대한 스택 생성
+2. board를 역순으로 탐색하며, 각 열의 인형을 lanes에 추가
+3. moves를 순회하며, 각 열에서 인형을 뽑아 bucket에 추가
+4. 해당 열에 인형이 있는 경우 lanes에서 인형을 뺌
+5. 바구니에 인형이 있고, 가장 위에 있는 인형과 같은 경우 바구니에 있는 인형을 빼고 결과값을 2 증가 시킴
+6. 바구니에 인형이 없거나, 가장 위에 있는 인형과 다른 경우 바구니에 인형을 넣음
+
+## Reference
+
+- [MDN for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+- [MDN Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+- [MDN Array.prototype.pop()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+-[Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
