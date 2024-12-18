@@ -1,6 +1,6 @@
 ## 문제 (07.js)
 
-[실패율](https://school.programmers.co.kr/learn/courses/30/lessons/49994)
+[방문 길이](https://school.programmers.co.kr/learn/courses/30/lessons/49994)
 
 권장 시간 복잡도: `O(N)`
 
